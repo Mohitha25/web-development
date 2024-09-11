@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <script>
+      function calculate(a, b, c) {
+        switch (c) {
+          case "+":
+            alert(a + b);
+            break;
+          case "-":
+            alert(a - b);
+            break;
+          case "*":
+            alert(a * b);
+            break;
+          case "/":
+            alert(a / b);
+            break;
+          case "%":
+            alert(a % b);
+            break;
+          default:
+            alert("Invalid operator");
+        }
+      }
+
+      let a = parseInt(prompt("Enter first number"));
+      let b = parseInt(prompt("Enter second number"));
+      let c = prompt("Enter operator");
+
+      calculate(a, b, c);
+    </script>
+  </body>
+</html>
